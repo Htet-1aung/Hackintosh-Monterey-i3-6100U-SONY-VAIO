@@ -1,30 +1,35 @@
-# Hackintosh-Monterey-i3-6100U-SONY VAIO 
-This is my overview of hacktonish MacOS Monterey 12.7.3 on my SONY VAIO intel i3-6100U.
-## HARDWARE  
+# Hackintosh-Monterey-i3-6100U-SONY VAIO
 
-# CPU
+This is an overview of running Hackintosh MacOS Monterey 12.7.3 on my SONY VAIO with an Intel i3-6100U processor.
 
-# GPU
+## Hardware
 
-# WIFI
+- CPU: Intel Core i3-6100U 2.3Ghz
+- GPU:
+  - Chipset Model: Intel HD Graphics 520
+  - Type: GPU
+  - Bus: Built-In
 
-# BLUETOOTH
+## What's Not Working
 
-# MOTHERBOARD
+The following features are not currently working:
 
+- WiFi
+- Bluetooth
+- Battery indicator
+- Sleep and hibernation
 
+## Fixing Issues
 
-## WHAT'S WORKING 
+To address the issues mentioned above, you can follow these steps:
 
+- WiFi: Add `itlwm` or `Airportitlwm.kext` to fix WiFi functionality.
+- Bluetooth: Install `BluetoothFixUp` and `IntelBluetoothFirmware.kext` to resolve Bluetooth-related dependencies.
+- Battery Indicator: Update `VirtualSMC.kext` and its dependencies to fix the battery indicator.
+- Other Issues: For any additional issues, add the necessary kext files to the `EFI/OC/KEXTS` directory.
 
+Note: Make sure to research and download the appropriate kext files for your specific hardware configuration.
 
+That's it! With these steps, you should be able to address the mentioned issues and have a functional Hackintosh setup on your SONY VAIO with an Intel i3-6100U processor running MacOS Monterey 12.7.3.
 
-## WHAT'S NOT WORKING 
-
-
-
-## FIX ISSUES 
-
-
-
-
+Feel free to customize and tweak the configuration as needed. Good luck!
