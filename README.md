@@ -14,9 +14,9 @@ This is an overview of running Hackintosh MacOS Monterey 12.7.3 on my SONY VAIO 
 
 The following features are not currently working:
 
-- WiFi
+- WiFi(Recommended to use Airportitwlm.kext for Intel wifi cards or itwlm.kext + heliport can be a solution too).
 - Bluetooth
-- Battery indicator
+- Battery indicator(Which can be fixed by upgrading SMCBatteryIndicator.kext)
 - Sleep and hibernation
 
 ## Fixing Issues
@@ -28,6 +28,8 @@ To address the issues mentioned above, you can follow these steps:
   Here: https://github.com/OpenIntelWireless/itlwm
 - Battery Indicator: Update `VirtualSMC.kext` and its dependencies to fix the battery indicator.
 - Other Issues: For any additional issues, add the necessary kext files to the `EFI/OC/KEXTS` directory.
+- ACPI Solution: Add SSDT-PLUG.aml and SSDT-USBX.aml to the /EFI/OC/ACPI directory.
+
 
 Note: Make sure to research and download the appropriate kext files for your specific hardware configuration.
 
